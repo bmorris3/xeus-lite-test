@@ -10,3 +10,4 @@ dependencies:
   - keyring
   - pip:
     - pyvo
+    - astroquery
