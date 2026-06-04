@@ -6,5 +6,7 @@ dependencies:
   # A Jupyter kernel for Python
   - xeus-python
   - astropy-base
-  - pip: 
-    - astroquery
+  - requests
+  - keyring
+  - pip:
+    - pyvo
