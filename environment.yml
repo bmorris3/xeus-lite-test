@@ -16,7 +16,7 @@ dependencies:
   - shapely
   - fast-histogram
   - casa_formats_io
-  - scikit-image
+  - scikit-image >= 0.25
   - pip:
     - astroquery
     - jdaviz
