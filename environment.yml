@@ -1,7 +1,6 @@
 name: default-environment
 channels:
   - https://prefix.dev/emscripten-forge-4x
-  - https://repo.prefix.dev/emscripten-forge-dev
   - https://prefix.dev/conda-forge
 dependencies:
   # A Jupyter kernel for Python
@@ -16,25 +15,25 @@ dependencies:
   - shapely
   - fast-histogram
   - casa_formats_io
-  - scikit-image == 0.25
-  - pip:
-    - astroquery
-    - jdaviz
-    - glue-core
-    - glue-jupyter
-    - glue-astronomy
-    - echo
-    - gwcs
-    - specutils
-    - ndcube
-    - spectral_cube
-    - radio_beam
-    - tqdm
-    - specreduce
-    - ipyvolume
-    - ipywebrtc
-    - pythreejs
-    - ipydatawidgets
-    - ipython_genutils
-    - ipyvuetify
-    - ipyvue
+  - scikit-image
+  - astroquery
+  - jdaviz
+  - glue-core
+  - glue-jupyter
+  - glue-astronomy
+  - echo
+  - gwcs
+  - specutils
+  - ndcube
+  - spectral_cube
+  - radio_beam
+  - tqdm
+  - specreduce
+  - ipyvolume
+  - ipywebrtc
+  - pythreejs
+  - ipydatawidgets
+  - ipython_genutils
+  - ipyvuetify
+  - ipyvue
+  # - pip:
