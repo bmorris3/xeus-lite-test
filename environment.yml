@@ -8,6 +8,32 @@ dependencies:
   - astropy-base
   - requests
   - keyring
+  - dask-core
+  - pandas
+  - matplotlib
+  - regions
+  - shapely
+  - fast-histogram
+  - casa_formats_io
+  - scikit-image
   - pip:
-    - pyvo
     - astroquery
+    - jdaviz
+    - glue-core
+    - glue-jupyter
+    - glue-astronomy
+    - echo
+    - gwcs
+    - specutils
+    - ndcube
+    - spectral_cube
+    - radio_beam
+    - tqdm
+    - specreduce
+    - ipyvolume
+    - ipywebrtc
+    - pythreejs
+    - ipydatawidgets
+    - ipython_genutils
+    - ipyvuetify
+    - ipyvue
