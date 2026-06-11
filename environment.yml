@@ -17,23 +17,57 @@ dependencies:
   - casa_formats_io
   - scikit-image
   - astroquery
-  - jdaviz
   - glue-core
-  - glue-jupyter
-  - glue-astronomy
   - echo
   - gwcs
   - specutils
-  - ndcube
-  - spectral_cube
-  - radio_beam
-  - tqdm
-  - specreduce
-  - ipyvolume
-  - ipywebrtc
-  - pythreejs
-  - ipydatawidgets
-  - ipython_genutils
-  - ipyvuetify
-  - ipyvue
-  # - pip:
+  - photutils
+  - spherical_geometry
+  # - watchfiles # written in rust
+  # - websockets # written with C
+  - pip:
+    # dependencies for jdaviz
+    - glue-jupyter @ git+https://github.com/bmorris3/glue-jupyter@defer-skimage-import # only imports skimage in contour functions
+    - jdaviz @ git+https://github.com/spacetelescope/jdaviz@main
+    - glue-astronomy
+    - ndcube
+    - spectral_cube
+    - radio_beam
+    - tqdm
+    - specreduce
+    - ipyvolume
+    - ipywebrtc
+    - pythreejs
+    - ipydatawidgets
+    - ipython_genutils
+    - ipyvuetify
+    - ipyvue
+    - bqplot_gl
+    - bqplot_image_gl
+    - bqplot_linlog
+    - ipypopout
+    - joblib
+    - stdatamodels
+    - ipyvuedraggable
+    - ipygoldenlayout
+    - ipysplitpanes
+    - git+https://github.com/widgetti/solara  # to pick up unreleased bugfix https://github.com/widgetti/solara/pull/1160
+    - reacton>=1.9
+    - ipywidgets>=7.7
+    - ipyvuetify>=1.6.10
+    - ipyvue>=1.9.0
+    - humanize
+    - asteval
+    - sidecar
+
+    # additional dependencies, for mast-aladin
+    - ipyaladin
+    - roman-datamodels
+    - pysiaf
+    # - mast-aladin @ git+https://github.com/spacetelescope/mast-aladin.git@main
+    # - anywidget  # depends on psygnal, which is pure python but won't install?
+    # - psygnal
+    # - typing-extensions
+
+    # for mast-table
+    - mast-table @ git+https://github.com/spacetelescope/mast-table.git@main
